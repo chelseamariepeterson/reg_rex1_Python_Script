@@ -108,6 +108,5 @@ plt.show()
 
 # In[ ]:
 
-
-
-
+plt.savefig('plot.show.png')
+plt.savefig('image.png')
