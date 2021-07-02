@@ -11,7 +11,6 @@ import seaborn as seabornInstance
 from sklearn.model_selection import train_test_split 
 from sklearn.linear_model import LinearRegression
 from sklearn import metrics
-get_ipython().run_line_magic('matplotlib', 'inline')
 
 
 # In[20]:
@@ -86,16 +85,6 @@ y_pred = regressor.predict(x_test)
 
 df = pd.DataFrame({'Actual': y_test.flatten(), 'Predicted': y_pred.flatten()})
 df
-
-
-# In[83]:
-
-
-df1 = df.head(25)
-df1.plot(kind='bar',figsize=(16,10))
-plt.grid(which='major', linestyle='-', linewidth='0.5', color='green')
-plt.grid(which='minor', linestyle=':', linewidth='0.5', color='black')
-plt.show()
 
 
 # In[84]:
