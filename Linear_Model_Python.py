@@ -7,7 +7,8 @@
 import pandas as pd  
 import numpy as np  
 import matplotlib.pyplot as plt  
-import seaborn as seabornInstance 
+import seaborn as seabornInstance
+import sys
 from sklearn.model_selection import train_test_split 
 from sklearn.linear_model import LinearRegression
 from sklearn import metrics
@@ -16,7 +17,7 @@ from sklearn import metrics
 # In[20]:
 
 
-dataset = pd.read_csv('regrex1.csv')
+dataset = pd.read_csv(sys.argv[1])
 
 
 # In[65]:
@@ -39,7 +40,7 @@ plt.title('Linear Model')
 plt.xlabel('X')  
 plt.ylabel('Y')  
 plt.show()
-
+plt.savefig('py_orig.png')
 
 # In[68]:
 
@@ -97,5 +98,5 @@ plt.show()
 
 # In[ ]:
 
-plt.savefig('plot.show.png')
-plt.savefig('image.png')
+plt.savefig('py_lm.png')
+
