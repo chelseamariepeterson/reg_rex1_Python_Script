@@ -3,7 +3,7 @@
 
 # In[19]:
 
-
+#**import dependencies**
 import pandas as pd  
 import numpy as np  
 import matplotlib.pyplot as plt  
@@ -16,13 +16,13 @@ from sklearn import metrics
 
 # In[20]:
 
-
+#bring in data
 dataset = pd.read_csv(sys.argv[1])
 
 
 # In[65]:
 
-
+# fun stuff
 dataset.shape
 
 
@@ -34,12 +34,14 @@ dataset.describe()
 
 # In[67]:
 
-
+#**Plot 1**
 dataset.plot(x='x', y='y', style='o')  
 plt.title('Linear Model')  
 plt.xlabel('X')  
 plt.ylabel('Y')  
 plt.show()
+
+#Save my Plot 1
 plt.savefig('py_orig.png')
 
 # In[68]:
@@ -90,13 +92,13 @@ df
 
 # In[84]:
 
-
+#**Plot 2**
 plt.scatter(x_test, y_test,  color='gray')
 plt.plot(x_test, y_pred, color='red', linewidth=2)
 plt.show()
 
 
 # In[ ]:
-
+#Save my Plot2
 plt.savefig('py_lm.png')
 
