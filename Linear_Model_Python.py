@@ -3,7 +3,7 @@
 
 # In[19]:
 
-#**import dependencies**
+#import dependencies
 import pandas as pd  
 import numpy as np  
 import matplotlib.pyplot as plt  
@@ -34,7 +34,7 @@ dataset.describe()
 
 # In[67]:
 
-#**Plot 1**
+#Plot 1
 dataset.plot(x='x', y='y', style='o')  
 plt.title('Linear Model')  
 plt.xlabel('X')  
@@ -92,7 +92,7 @@ df
 
 # In[84]:
 
-#**Plot 2**
+#Plot 2
 plt.scatter(x_test, y_test,  color='gray')
 plt.plot(x_test, y_pred, color='red', linewidth=2)
 plt.show()
